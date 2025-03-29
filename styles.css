@@ -1,0 +1,88 @@
+/* Clean styles.css with White Background and Green Heading */
+body {
+  background: #ffffff;
+  font-family: 'Segoe UI', sans-serif;
+  color: #000;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 50px; /* Added space below the heading */
+  font-weight: bold;
+  font-size: 3rem;
+  color: #28a745; /* Green Heading */
+}
+
+.card-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 40px;
+  padding: 20px;
+  border-radius: 15px;
+}
+
+.price-card {
+  background: #f8f9fa;
+  border-radius: 20px;
+  padding: 25px;
+  margin: 20px;
+  width: 320px;
+  box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.1);
+  border: 3px solid #000; /* Black border with 3px */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.price-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 20px 20px 40px rgba(0, 0, 0, 0.2);
+}
+
+.price-card h3 {
+  color: #007bff;
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+}
+
+.price-card p {
+  color: #555;
+  font-size: 1rem;
+}
+
+.refresh-btn {
+  display: block;
+  margin: 40px auto;
+  background: #28a745; /* Green for Market Price button */
+  color: white;
+  border: none;
+  border-radius: 50px;
+  padding: 15px 40px;
+  font-size: 18px;
+  cursor: pointer;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.refresh-btn:hover {
+  background: #218838;
+  transform: translateY(-5px);
+  box-shadow: 0 20px 30px rgba(0, 0, 0, 0.3);
+}
+
+input.form-control {
+  border: 2px solid #000; /* Highlighted input fields with black border */
+  border-radius: 8px;
+  padding: 10px;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+input.form-control:focus {
+  border-color: #28a745; /* Highlight green on focus */
+  outline: none;
+  box-shadow: 0 0 8px rgba(40, 167, 69, 0.5);
+}

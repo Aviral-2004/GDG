@@ -1,0 +1,29 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Live Market Prices - Helping Farmers</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <h1>🌾 Live Market Prices - Helping Farmers 🌿</h1>
+
+  <div class="container">
+    <h3>📊 Enter Market Data Manually</h3>
+    <input id="commodity" type="text" placeholder="Commodity Name" class="form-control mb-2" />
+    <input id="state" type="text" placeholder="State" class="form-control mb-2" />
+    <input id="market" type="text" placeholder="Market Name" class="form-control mb-2" />
+    <input id="modalPrice" type="number" placeholder="Modal Price (₹)" class="form-control mb-2" />
+    <input id="arrivalDate" type="date" class="form-control mb-2" />
+    <button class="refresh-btn" onclick="addPriceCard()">➕ Add Market Price</button>
+  </div>
+
+  <div class="card-container" id="priceContainer"></div>
+
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
