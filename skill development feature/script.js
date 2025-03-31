@@ -1,5 +1,3 @@
-const API_KEY = "AIzaSyAHBDmLWIH77frfHSQRMQlojPxX8dPYzz4"; // Replace with your actual API key
-
 // Function to convert text to speech using Google Cloud API
 function speakText() {
   let text =
