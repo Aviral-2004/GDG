@@ -1,0 +1,118 @@
+/* Google Font */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap");
+
+/* General Body Styling */
+body {
+  font-family: "Poppins", Arial, sans-serif;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  background-color: #f5f1e8; /* Light Beige for a warm rural feel */
+  color: #333;
+}
+
+/* Title Styling */
+h1 {
+  color: #4a3628; /* Dark Brown */
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-top: 20px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* Search Box Styling */
+#searchBox {
+  width: 60%;
+  padding: 12px;
+  margin: 20px 0;
+  font-size: 18px;
+  border: 2px solid #8f5e1d; /* Rustic Brown */
+  border-radius: 5px;
+  outline: none;
+  background: #fff;
+  color: #333;
+}
+
+/* Search Box Focus Effect */
+#searchBox:focus {
+  border-color: #6d4c2f; /* Darker Brown */
+}
+
+/* Training Container */
+.training-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+/* Training Item Styling */
+.training-item {
+  background: #ffffff; /* Clean White Background */
+  padding: 15px;
+  margin: 15px;
+  width: 60%;
+  border-radius: 8px;
+  border: 2px solid #6a994e; /* Muted Green */
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+}
+
+/* Hover Effect */
+.training-item:hover {
+  transform: translateY(-3px);
+  box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.15);
+  border-color: #527a3d; /* Slightly darker green on hover */
+}
+
+/* Video Container */
+.video-container {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* Buttons */
+button {
+  background: #d99836; /* Earthy Orange */
+  color: white;
+  border: none;
+  padding: 10px 18px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+  font-weight: bold;
+}
+
+button:hover {
+  background: #b5741c; /* Darker Orange */
+}
+
+/* Footer Styling */
+footer {
+  background: #4a3628; /* Dark Brown */
+  color: white;
+  padding: 12px;
+  margin-top: 30px;
+  font-size: 14px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  #searchBox {
+    width: 80%;
+  }
+
+  .training-item {
+    width: 80%;
+    flex-direction: column;
+    text-align: center;
+  }
+}
